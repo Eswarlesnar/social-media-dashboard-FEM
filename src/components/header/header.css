@@ -1,0 +1,92 @@
+.navbar{
+    
+    width :70%;
+    margin :auto;
+    display: flex;
+    justify-content:space-between;
+    margin-top :75px;
+}
+
+.header{
+    margin : 0;
+}
+
+.navbar-left{
+    display : flex ; 
+    flex-direction: column;
+    gap : 5px;
+}
+
+
+.navbar-left p{
+    margin : 0;
+}
+
+.navbar-right { 
+    display :flex ; 
+    align-items: center;
+    gap :3px;
+}
+
+p{
+    color : hsl(230, 22%, 74%);
+    font-size: large;
+    margin : 0;
+    
+}
+
+.navbar-right p {
+    font-weight: 900;
+}
+
+#dark-mode{
+    width : 0 ;
+    height : 0 ; 
+    visibility: hidden;
+}
+
+label{
+    width :50px;
+    height : 25px;
+    border-radius: 15px;
+    position: relative; 
+    display : block;
+    cursor: pointer;
+}
+
+.label-light {
+  background-color: hsl(230, 22%, 74%);
+ 
+}
+
+.label-light:after {
+    content : "";
+    width :20px ; 
+    height : 20px;
+    border-radius: 50%;
+    background-color: white;
+    position : absolute ; 
+    right : 3.3px;
+    top :2.5px;
+}
+
+
+.label-light:hover { 
+    background: linear-gradient(to right , hsl(210, 78%, 56%) , hsl(146, 68%, 55%));
+}
+
+
+.label-dark {
+    background: linear-gradient(to right ,hsl(210, 78%, 56%) , hsl(146, 68%, 55%));
+}
+
+.label-dark:after {
+    content : "";
+    width :20px ; 
+    height : 20px;
+    border-radius: 50%;
+    background-color: black;
+    position : absolute ; 
+    left : 3.3px;
+    top :2.5px;
+}
