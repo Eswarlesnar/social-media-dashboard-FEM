@@ -8,7 +8,8 @@
   --card-text-color : hsl(228, 12%, 44%);
   --card-hover-text-color:hsl(230, 17%, 14%);
   /* font-size: "Inter" , sans-serif; */
-  
+  --red : hsl(356, 69%, 56%);
+  --green : hsl(163, 72%, 41%);
 }
 
 [data-theme=true] {

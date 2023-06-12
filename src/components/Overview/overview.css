@@ -59,6 +59,14 @@
     align-items : center;
 }
 
+.negative{
+    color : var(--red)
+}
+
+.positive{
+    color : var(--green)
+}
+
 
 .header p{
     color : var(--card-text-color);

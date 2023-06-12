@@ -45,11 +45,11 @@
 }
 
 .green {
-    color :green;
+    color : var(--green);
 }
 
 .red {
-    color : red;
+    color :var(--red);
 }
 
 .content h3{ 
