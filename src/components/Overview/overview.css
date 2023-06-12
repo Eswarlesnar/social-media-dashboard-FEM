@@ -1,0 +1,77 @@
+.overview-container {
+    width : 70%;
+    margin : auto;
+    margin-top:70px;
+}
+
+.overview-container h2{
+    font-size: 30px;
+    font-weight : 900;
+    letter-spacing : 1px;
+    color :  hsl(230, 22%, 74%);
+}
+
+.overview-contents{
+    display : flex ; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:30px;
+}
+
+
+.overview-card {
+    width : 240px ;
+    height :125px;
+    border-radius: 4px;
+    box-shadow: 0.2px 0.2px 0px grey;
+    background : hsla(230, 22%, 74%,0.2);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-around;    
+}
+
+.overview-card .header { 
+    display : flex ; 
+    justify-content: space-around;
+}
+
+.overview-card .footer { 
+    display : flex ; 
+    justify-content: space-around;
+}
+
+.footer div { 
+    display : flex; 
+    gap :10px;
+    align-items : center;
+}
+
+
+.header p{
+    color : hsl(230, 22%, 74%);
+    font-weight: 900;
+    font-size: larger;
+}
+
+
+.footer h5{
+   font-size: 25px;
+   font-weight :700;
+   margin : 0;
+}
+
+
+@media screen  and (max-width :500px){
+    .overview-container{
+        width :100%;
+    }
+    .overview-card{
+        width : 80%;
+    }
+    .overview-container h2{
+        padding-left :50px;
+    }
+    
+}

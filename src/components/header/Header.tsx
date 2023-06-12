@@ -1,9 +1,13 @@
-import { useState } from "react"
+
 import "./header.css"
 
-const Header : React.FC = () => {
-    const [darkmode , setDarkmode] = useState(false)
-    const labelClassname = darkmode ? "label-dark" : "label-light"
+interface Props {
+  handleDarkModeToggle : () => void , 
+  darkMode : boolean
+}
+const Header : React.FC<Props> = ({handleDarkModeToggle , darkMode}) => {
+  
+    const labelClassname = darkMode ? "label-dark" : "label-light"
     return <div className="navbar">
         <div className="navbar-left">
            <h2 className="header">Social Media Dashboard</h2>
@@ -11,7 +15,7 @@ const Header : React.FC = () => {
         </div>
         <div className="navbar-right">
            <p>Dark Mode</p>
-           <input id ="dark-mode" type ="checkbox" onChange = {() => setDarkmode(!darkmode)} />
+           <input id ="dark-mode" type ="checkbox" onChange = {() => handleDarkModeToggle()} />
            <label className ={labelClassname} htmlFor="dark-mode"/>
         </div>
     </div>

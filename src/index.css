@@ -1,5 +1,27 @@
+
+:root {
+  --background: white;
+  --text-primary: black;
+  --text-secondary: royalblue;
+}
+
+[data-theme=true] {
+  --background: black;
+  --text-primary: white;
+  --text-secondary: grey;
+ 
+}
+
+
 body{
   margin : 0 ; 
   padding : 0; 
   box-sizing: border-box;
+  background-color: var(--background);
+  color : var(--text-primary)
+}
+
+
+p{
+  margin :  0 !important
 }
