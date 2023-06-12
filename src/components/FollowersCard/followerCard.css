@@ -94,6 +94,12 @@
 }
 
 
-@media screen  and (max-width :500px){
+@media screen  and (max-width :1400px){
+    .follower-card {
+        width : 200px ;
+        height : 200px;
+        gap :10px;
+        justify-content: space-evenly;
+    }
     
 }

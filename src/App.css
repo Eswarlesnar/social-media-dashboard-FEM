@@ -13,5 +13,5 @@ button {
     border: 2px var(--text-primary) solid;
     float: right;
     transition: all .5s;
-  }
+}
 

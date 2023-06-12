@@ -94,3 +94,12 @@
     }
     
 }
+
+
+@media screen  and (max-width :1400px){
+    .overview-card{
+        width : 200px;
+        justify-content: space-evenly;
+    }
+    
+}
