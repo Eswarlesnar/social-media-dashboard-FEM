@@ -3,6 +3,7 @@ import FollowersCard from "../FollowersCard/FollowersCard";
 
 
 
+
 export interface FollowerDataType {
    platform : string,
    type : "Subscribers" | "Followers" ;
@@ -20,7 +21,7 @@ const FacebookFollowerData : FollowerDataType = {
     count : "1987",
     followersTrend : true , 
     followersCountToday : 12,
-    icon : "icon-facebook.svg",
+    icon :`${new URL("../../assets/icon-facebook.svg", import.meta.url).href}`,
     accountName : "@nathanf"
 }
 
@@ -30,7 +31,7 @@ const TwitterFollowerData : FollowerDataType = {
     count : "1044",
     followersTrend : true , 
     followersCountToday : 99,
-    icon : "icon-twitter.svg",
+    icon : `${new URL("../../assets/icon-twitter.svg", import.meta.url).href}`,
     accountName : "@nathanf"
 }
 
@@ -40,17 +41,17 @@ const InstagramFollowerData : FollowerDataType = {
     count : "11k",
     followersTrend : true , 
     followersCountToday : 1099,
-    icon : "icon-instagram.svg",
+    icon : `${new URL("../../assets/icon-instagram.svg", import.meta.url).href}`,
     accountName : "@realnathanf"
 }
 
 const YoutudeFollowerData  : FollowerDataType = {
-    platform: "youtube",
+    platform :"youtube",
     type : "Subscribers", 
     count : "8239",
     followersTrend : false , 
     followersCountToday : 149,
-    icon : "icon-youtube.svg",
+    icon : `${new URL("../../assets/icon-youtube.svg", import.meta.url).href}`,
     accountName : "Nathan F"
 }
 
