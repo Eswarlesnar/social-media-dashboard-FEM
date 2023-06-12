@@ -1,6 +1,6 @@
 .follower-card {
     width : 240px ;
-    height : 180px;
+    height : 200px;
     border-radius: 4px;
     box-shadow: 0.2px 0.2px 0px grey;
     background : var(--card-background);
@@ -24,7 +24,7 @@
 
 .header{
     display: flex;
-    gap :10px;
+    gap :15px;
     align-items: center;
 }
 
@@ -35,6 +35,10 @@
     align-items: center;
 }
 
+
+.content{
+    text-align: center;
+}
 
 .footer img {
     height : 6px !important;
@@ -59,7 +63,7 @@
     margin-top :5px;
     color : var(--card-text-color);
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 11px;
     letter-spacing:2.5px;
 }
 
